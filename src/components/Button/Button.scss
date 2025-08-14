@@ -1,0 +1,12 @@
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(black, 10%);
+  }
+}
