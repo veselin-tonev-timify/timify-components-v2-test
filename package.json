@@ -1,6 +1,9 @@
 {
-  "name": "timify-components",
-  "version": "2.0.0",
+  "name": "@veselin-tonev-timify/timify-components-v2-test",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/veselin-tonev-timify"
+  },
+  "version": "2.0.5",
   "description": "TIMIFY FE React Component Library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
