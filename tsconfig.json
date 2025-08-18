@@ -9,7 +9,7 @@
     "module": "ESNext",
     "declaration": true,
     "declarationDir": "dist/types",
-    "sourceMap": true,
+    "sourceMap": false,
     "outDir": "dist/temp",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,

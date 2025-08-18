@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/veselin-tonev-timify"
   },
-  "version": "2.0.13",
+  "version": "2.0.14",
   "description": "TIMIFY FE React Component Library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
