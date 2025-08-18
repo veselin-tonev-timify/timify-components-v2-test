@@ -1,5 +1,4 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     "target": "es5",
     "esModuleInterop": true,
@@ -7,21 +6,13 @@
     "strict": true,
     "skipLibCheck": true,
     "jsx": "react",
-    "module": "esnext",
+    "module": "ESNext",
     "declaration": true,
-    "declarationDir": "types",
+    "declarationDir": "dist/types",
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": "dist/temp",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true,
-    "types": [],
-    "declarationMap": true,
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force"
+    "emitDeclarationOnly": false
   }
 }
