@@ -26,10 +26,9 @@ export default [
       commonjs(),
       typescript({ 
         tsconfig: "./tsconfig.json",
-        declaration: false,
         declarationDir: "dist/types"
       }),
-      postcss()
+      postcss({ minimize: true })
     ],
     external: ["react", "react-dom"]
   },
