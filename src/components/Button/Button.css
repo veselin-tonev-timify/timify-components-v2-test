@@ -1,0 +1,8 @@
+.ta-btn {
+  background-color: black;
+  color: white;
+}
+
+.ta-btn:hover {
+  color: pink;
+}
