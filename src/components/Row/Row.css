@@ -1,0 +1,10 @@
+.ta-row {
+  display: table;
+  width: calc(100% + 8px);
+  margin: 0 -4px;
+  margin-bottom: 8px;
+}
+
+.ta-row.ta-row__no-offset {
+  margin-bottom: 0;
+}
