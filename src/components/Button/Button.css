@@ -1,0 +1,1131 @@
+.ta-btn {
+  height: 32px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.33;
+  display: inline-block;
+  letter-spacing: 0.102px;
+  transition: all 0.2s;
+}
+
+.ta-btn.ta-btn-label-only {
+  height: max-content;
+  padding: 0;
+  font-weight: 700;
+  line-height: 16px;
+  border-radius: 4px;
+}
+
+.ta-btn.ta-btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.ta-btn.ta-btn-md {
+  padding: 4px 8px;
+  height: 24px;
+}
+
+.ta-btn.ta-btn-icon-only.ta-btn-md {
+  height: 24px;
+  width: 24px;
+  padding: 4px;
+}
+
+.ta-btn.ta-btn-sm {
+  padding: 4px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.ta-btn.ta-btn-xl {
+  height: 40px;
+}
+
+.ta-btn.ta-btn-icon-only.ta-btn-xl {
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.ta-btn.ta-btn-icon-only.ta-btn-xs {
+  height: 16px;
+  width: 16px;
+  padding: 0 4px;
+  font-size: 10px;
+}
+
+.ta-btn.ta-btn-icon-only.ta-btn-xxs {
+  height: 14px;
+  width: 14px;
+  padding: 0 4px;
+  font-size: 10px;
+}
+
+.ta-btn.ta-btn-icon-only.ta-btn-xxxs {
+  height: 12px;
+  width: 12px;
+  padding: 0 4px;
+  font-size: 8px;
+}
+
+.ta-btn.ta-btn-with-icon > i {
+  margin-right: 4px;
+}
+
+.ta-btn.ta-btn-border-md {
+  border-radius: 4px;
+}
+
+.ta-btn.ta-btn-icon-only.ta-btn-sm {
+  height: 20px;
+  width: 20px;
+  padding: 0 4px;
+  line-height: 20px;
+}
+
+.ta-btn.ta-btn-rounded.ta-btn-icon-only {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ta-btn.ta-btn-rounded {
+  border-radius: 50%;
+}
+
+.ta-btn:hover:not(.ta-btn-disabled) {
+  cursor: pointer;
+}
+
+.ta-btn.ta-btn-icon-only {
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+.ta-btn.ta-btn-icon-only.ta-btn-label-only {
+  height: unset;
+  width: unset;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.ta-btn.ta-btn-blank {
+  background-color: transparent;
+  color: var(--color-light-grey-100, #b6babd);
+}
+
+.ta-btn.ta-btn-blank:hover {
+  color: var(--color-grey-70-rgba, rgba(80, 90, 94, 0.7));
+}
+
+.ta-btn.ta-btn-blank.ta-btn-icon-only {
+  padding: 0;
+}
+
+.ta-btn:focus {
+  outline: none;
+}
+
+/* PRIMARY */
+.ta-btn.ta-btn-primary {
+  background-color: var(--color-red-100, #cb3b43);
+  color: var(--color-white, #fff);
+}
+
+.ta-btn.ta-btn-primary:not(.ta-btn-disabled):focus {
+  box-shadow: 0px 0px 0px 4px rgba(203, 59, 67, 0.32);
+}
+
+.ta-btn.ta-btn-primary:not(.ta-btn-disabled):focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.ta-btn.ta-btn-primary:hover,
+.ta-btn.ta-btn-primary:not(.ta-btn-disabled):focus:not(:focus-visible):hover {
+  background-color: #bf3038;
+}
+
+/* PRIMARY GHOST */
+.ta-btn.ta-btn-primary.ta-btn-ghost {
+  color: var(--color-red-100, #cb3b43);
+  border: 1px solid var(--color-red-100, #cb3b43);
+  background-color: transparent;
+}
+
+.ta-btn.ta-btn-primary.ta-btn-ghost:not(.ta-btn-disabled):focus {
+  background: rgba(203, 59, 67, 0.04);
+}
+
+.ta-btn.ta-btn-primary.ta-btn-ghost:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.ta-btn.ta-btn-primary.ta-btn-ghost:hover,
+.ta-btn.ta-btn-primary.ta-btn-ghost:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ):hover {
+  background-color: rgba(203, 59, 67, 0.16);
+  border-color: #bf3038;
+  color: #bf3038;
+}
+
+/* PRIMARY LABEL ONLY */
+.ta-btn.ta-btn-primary.ta-btn-label-only {
+  background-color: transparent;
+  color: #cb3b43;
+}
+
+.ta-btn.ta-btn-primary.ta-btn-label-only:not(.ta-btn-disabled):focus {
+  background-color: rgba(203, 59, 67, 0.32);
+  box-shadow: 0px 0px 0px 4px rgba(203, 59, 67, 0.32);
+  border: none;
+}
+
+.ta-btn.ta-btn-primary.ta-btn-label-only:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ) {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.ta-btn.ta-btn-primary.ta-btn-label-only:not(.ta-btn-disabled):hover,
+.ta-btn.ta-btn-primary.ta-btn-label-only:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ):hover {
+  color: #bf3038;
+}
+
+/* SECONDARY */
+.ta-btn.ta-btn-secondary {
+  background-color: #c3c5c7;
+  color: #4b4e52;
+}
+
+.ta-btn.ta-btn-secondary:not(.ta-btn-disabled):focus {
+  box-shadow: 0px 0px 0px 4px rgba(37, 39, 41, 0.16);
+}
+
+.ta-btn.ta-btn-secondary:not(.ta-btn-disabled):focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.ta-btn.ta-btn-secondary:hover,
+.ta-btn.ta-btn-secondary:not(.ta-btn-disabled):focus:not(:focus-visible):hover {
+  background-color: #b2b5b8;
+  color: #3c3f42;
+}
+
+/* SECONDARY GHOST */
+.ta-btn.ta-btn-secondary.ta-btn-ghost {
+  color: #95999e;
+  border: solid 1px #c3c5c7;
+  background-color: transparent;
+}
+
+.ta-btn.ta-btn-secondary.ta-btn-ghost:not(.ta-btn-disabled):focus {
+  background: rgba(37, 39, 41, 0.04);
+}
+
+.ta-btn.ta-btn-secondary.ta-btn-ghost:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ) {
+  background: transparent;
+  box-shadow: none;
+  color: #95999e;
+}
+
+.ta-btn.ta-btn-secondary.ta-btn-ghost:not(.ta-btn-disabled):hover,
+.ta-btn.ta-btn-secondary.ta-btn-ghost:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ):hover {
+  background-color: rgba(37, 39, 41, 0.08);
+  border-color: #b2b5b8;
+  color: #666b70;
+}
+
+/* SECONDARY LABEL ONLY */
+.ta-btn.ta-btn-secondary.ta-btn-label-only {
+  background-color: transparent;
+  color: #95999e;
+}
+
+.ta-btn.ta-btn-secondary.ta-btn-label-only:not(.ta-btn-disabled):focus {
+  background-color: rgba(37, 39, 41, 0.16);
+  box-shadow: 0px 0px 0px 4px rgba(37, 39, 41, 0.16);
+  color: #95999e;
+  border: none;
+}
+
+.ta-btn.ta-btn-secondary.ta-btn-label-only:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ) {
+  background-color: transparent;
+  box-shadow: none;
+  color: #95999e;
+  border: none;
+}
+
+.ta-btn.ta-btn-secondary.ta-btn-label-only:not(.ta-btn-disabled):hover,
+.ta-btn.ta-btn-secondary.ta-btn-label-only:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ):hover {
+  color: #666b70;
+}
+
+.ta-btn.ta-btn-secondary.ta-btn-ghost.ta-btn-border-none {
+  border: none;
+}
+
+/* TERTIARY */
+.ta-btn.ta-btn-tertiary {
+  background-color: #252729;
+  color: var(--color-white, #fff);
+}
+
+.ta-btn.ta-btn-tertiary:not(.ta-btn-disabled):focus {
+  box-shadow: 0px 0px 0px 4px rgba(37, 39, 41, 0.32);
+}
+
+.ta-btn.ta-btn-tertiary:not(.ta-btn-disabled):focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.ta-btn.ta-btn-tertiary:hover,
+.ta-btn.ta-btn-tertiary:not(.ta-btn-disabled):focus:not(:focus-visible):hover {
+  background-color: #0e0e0f;
+}
+
+/* TERTIARY GHOST */
+.ta-btn.ta-btn-tertiary.ta-btn-ghost {
+  color: #252729;
+  border: solid 1px #252729;
+  background-color: transparent;
+}
+
+.ta-btn.ta-btn-tertiary.ta-btn-ghost:not(.ta-btn-disabled):focus {
+  background-color: rgba(37, 39, 41, 0.04);
+}
+
+.ta-btn.ta-btn-tertiary.ta-btn-ghost:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.ta-btn.ta-btn-tertiary.ta-btn-ghost:hover,
+.ta-btn.ta-btn-tertiary.ta-btn-ghost:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ):hover {
+  background-color: rgba(37, 39, 41, 0.16);
+  border-color: #0e0e0f;
+  color: #0e0e0f;
+}
+
+/* TERTIARY LABEL ONLY */
+.ta-btn.ta-btn-tertiary.ta-btn-label-only {
+  background-color: transparent;
+  color: #252729;
+}
+
+.ta-btn.ta-btn-tertiary.ta-btn-label-only:not(.ta-btn-disabled):focus {
+  background-color: rgba(37, 39, 41, 0.32);
+  box-shadow: 0px 0px 0px 4px rgba(37, 39, 41, 0.32);
+  color: #252729;
+  border: none;
+}
+
+.ta-btn.ta-btn-tertiary.ta-btn-label-only:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ) {
+  background-color: transparent;
+  box-shadow: none;
+  color: #252729;
+  border: none;
+}
+
+.ta-btn.ta-btn-tertiary.ta-btn-label-only:not(.ta-btn-disabled):hover,
+.ta-btn.ta-btn-tertiary.ta-btn-label-only:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ):hover {
+  color: #0e0e0f;
+}
+
+/* SUCCESS */
+.ta-btn.ta-btn-success {
+  background-color: #93ad45;
+  color: var(--color-white, #fff);
+}
+
+.ta-btn.ta-btn-success:not(.ta-btn-disabled):focus {
+  box-shadow: 0px 0px 0px 4px rgba(147, 173, 69, 0.32);
+}
+
+.ta-btn.ta-btn-success:not(.ta-btn-disabled):focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.ta-btn.ta-btn-success:not(.ta-btn-disabled):hover,
+.ta-btn.ta-btn-success:not(.ta-btn-disabled):focus:not(:focus-visible):hover {
+  background-color: #89a140;
+}
+
+/* SUCCESS GHOST */
+.ta-btn.ta-btn-success.ta-btn-ghost {
+  color: #93ad45;
+  border: solid 1px #93ad45;
+  background-color: transparent;
+}
+
+.ta-btn.ta-btn-success.ta-btn-ghost:not(.ta-btn-disabled):focus {
+  background-color: rgba(127, 173, 35, 0.04);
+}
+
+.ta-btn.ta-btn-success.ta-btn-ghost:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ) {
+  background: transparent;
+  box-shadow: none;
+  color: #93ad45;
+}
+
+.ta-btn.ta-btn-success.ta-btn-ghost:hover,
+.ta-btn.ta-btn-success.ta-btn-ghost:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ):hover {
+  background-color: rgba(147, 173, 69, 0.16);
+  border-color: #89a140;
+  color: #89a140;
+}
+
+/* SUCCESS LABEL ONLY */
+.ta-btn.ta-btn-success.ta-btn-label-only {
+  background-color: transparent;
+  color: #93ad45;
+}
+
+.ta-btn.ta-btn-success.ta-btn-label-only:not(.ta-btn-disabled):focus {
+  background-color: rgba(147, 173, 69, 0.32);
+  box-shadow: 0px 0px 0px 4px rgba(147, 173, 69, 0.32);
+  color: #93ad45;
+  border: none;
+}
+
+.ta-btn.ta-btn-success.ta-btn-label-only:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ) {
+  background-color: transparent;
+  box-shadow: none;
+  color: #93ad45;
+  border: none;
+}
+
+.ta-btn.ta-btn-success.ta-btn-label-only:not(.ta-btn-disabled):hover,
+.ta-btn.ta-btn-success.ta-btn-label-only:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ):hover {
+  color: #89a140;
+}
+
+/* WHITE */
+.ta-btn.ta-btn-white {
+  background-color: var(--color-white, #fff);
+  color: #4b4e52;
+}
+
+.ta-btn.ta-btn-white:not(.ta-btn-disabled):focus {
+  box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.32);
+}
+
+.ta-btn.ta-btn-white:not(.ta-btn-disabled):focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.ta-btn.ta-btn-white:not(.ta-btn-disabled):hover,
+.ta-btn.ta-btn-white:not(.ta-btn-disabled):focus:not(:focus-visible):hover {
+  color: #3c3f42;
+  background-color: var(--color-white, #fff);
+}
+
+/* WHITE GHOST */
+.ta-btn.ta-btn-white.ta-btn-ghost {
+  color: var(--color-white, #fff);
+  border: solid 1px var(--color-white, #fff);
+  background-color: transparent;
+}
+
+.ta-btn.ta-btn-white.ta-btn-ghost:not(.ta-btn-disabled):focus {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.ta-btn.ta-btn-white.ta-btn-ghost:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ) {
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+}
+
+.ta-btn.ta-btn-white.ta-btn-ghost:hover,
+.ta-btn.ta-btn-white.ta-btn-ghost:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ):hover {
+  background-color: rgba(255, 255, 255, 0.16);
+  border-color: var(--color-white, #fff);
+  color: var(--color-white, #fff);
+}
+
+/* WHITE LABEL ONLY */
+.ta-btn.ta-btn-white.ta-btn-label-only {
+  background-color: transparent;
+  color: #fff;
+}
+
+.ta-btn.ta-btn-white.ta-btn-label-only:not(.ta-btn-disabled):focus {
+  background-color: rgba(255, 255, 255, 0.32);
+  box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.32);
+  color: #fff;
+  border: none;
+}
+
+.ta-btn.ta-btn-white.ta-btn-label-only:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ) {
+  background-color: transparent;
+  box-shadow: none;
+  color: #fff;
+  border: none;
+}
+
+.ta-btn.ta-btn-white.ta-btn-label-only:not(.ta-btn-disabled):hover,
+.ta-btn.ta-btn-white.ta-btn-label-only:not(.ta-btn-disabled):focus:not(
+    :focus-visible
+  ):hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.ta-btn.ta-btn-tertiary.ta-btn-ghost.ta-btn-border-none {
+  border: none;
+}
+
+.ta-btn.ta-btn-primary.ta-btn-disabled,
+.ta-btn.ta-btn-secondary.ta-btn-disabled,
+.ta-btn.ta-btn-tertiary.ta-btn-disabled,
+.ta-btn.ta-btn-success.ta-btn-disabled,
+.ta-btn.ta-btn-white.ta-btn-disabled {
+  background-color: #e8e9eb;
+  color: #c3c5c7;
+}
+
+.ta-btn.ta-btn-primary.ta-btn-disabled.ta-btn-label-only,
+.ta-btn.ta-btn-secondary.ta-btn-disabled.ta-btn-label-only,
+.ta-btn.ta-btn-tertiary.ta-btn-disabled.ta-btn-label-only,
+.ta-btn.ta-btn-success.ta-btn-disabled.ta-btn-label-only,
+.ta-btn.ta-btn-white.ta-btn-disabled.ta-btn-label-only {
+  background-color: transparent;
+  color: #c3c5c7;
+}
+
+.ta-btn.ta-btn-primary.ta-btn-ghost.ta-btn-disabled,
+.ta-btn.ta-btn-secondary.ta-btn-ghost.ta-btn-disabled,
+.ta-btn.ta-btn-tertiary.ta-btn-ghost.ta-btn-disabled,
+.ta-btn.ta-btn-success.ta-btn-ghost.ta-btn-disabled,
+.ta-btn.ta-btn-white.ta-btn-ghost.ta-btn-disabled {
+  border: solid 1px #e8e9eb;
+  color: #c3c5c7;
+  background-color: transparent;
+}
+
+.ta-btn.ta-btn-primary.ta-btn-ghost.ta-btn-disabled:hover,
+.ta-btn.ta-btn-secondary.ta-btn-ghost.ta-btn-disabled:hover,
+.ta-btn.ta-btn-tertiary.ta-btn-ghost.ta-btn-disabled:hover {
+  background-color: rgba(225, 227, 228, 0.15);
+}
+
+.ta-btn.ta-btn-primary.ta-btn-ghost.ta-btn-disabled.ta-btn-border-none,
+.ta-btn.ta-btn-secondary.ta-btn-ghost.ta-btn-disabled.ta-btn-border-none,
+.ta-btn.ta-btn-tertiary.ta-btn-ghost.ta-btn-disabled.ta-btn-border-none,
+.ta-btn.ta-btn-success.ta-btn-ghost.ta-btn-disabled.ta-btn-border-none,
+.ta-btn.ta-btn-white.ta-btn-ghost.ta-btn-disabled.ta-btn-border-none {
+  border: none;
+}
+
+.ta-btn.ta-btn-premium {
+  background: var(--color-yellow-100, #ecd007);
+  border-color: var(--color-yellow-100, #ecd007);
+  color: var(--color-grey-100, #505a5e);
+  font-weight: 700;
+  text-align: center;
+}
+
+.ta-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
+}
+
+.ta-btn-wrapper.ta-btn-wrapper__space-between {
+  justify-content: space-between;
+}
+
+.ta-btn.ta-btn-border-none {
+  border: none;
+}
+
+/* CLEAR DARK */
+.ta-btn.ta-btn-clear-dark {
+  background: #25272929;
+  color: #2527298f;
+}
+
+.ta-btn.ta-btn-clear-dark:hover {
+  background: #25272952;
+  color: #2527298f;
+}
+
+.ta-btn.ta-btn-clear-dark:not(.ta-btn-disabled):focus {
+  box-shadow: 0px 0px 0px 4px rgba(37, 39, 41, 0.32);
+}
+
+.ta-btn.ta-btn-clear-dark:not(.ta-btn-disabled):focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.ta-btn.ta-btn-clear-dark.ta-btn-disabled {
+  background: #25272914;
+  color: #25272929;
+}
+
+/* CLEAR LIGHT */
+.ta-btn.ta-btn-clear-light {
+  background: #ffffff29;
+  color: #fff;
+}
+
+.ta-btn.ta-btn-clear-light:hover {
+  background: #ffffff52;
+  color: #fff;
+}
+
+.ta-btn.ta-btn-clear-light:not(.ta-btn-disabled):focus {
+  box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.32);
+}
+
+.ta-btn.ta-btn-clear-light:not(.ta-btn-disabled):focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.ta-btn.ta-btn-clear-light.ta-btn-disabled {
+  background: #ffffff14;
+  color: #ffffff29;
+}
+
+/* PADDINGS */
+/* none - 0 */
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-none-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-none-top,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-none-top,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-none-top,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-none-top,
+.ta-btn.ta-btn-sm.ta-btn-paddings-none-top,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-none-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-none-top,
+.ta-btn.ta-btn-md.ta-btn-paddings-none-top,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-none-top,
+.ta-btn.ta-btn-paddings-none-top {
+  padding-top: 0;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-none-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-none-right,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-none-right,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-none-right,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-none-right,
+.ta-btn.ta-btn-sm.ta-btn-paddings-none-right,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-none-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-none-right,
+.ta-btn.ta-btn-md.ta-btn-paddings-none-right,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-none-right,
+.ta-btn.ta-btn-paddings-none-right {
+  padding-right: 0;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-none-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-none-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-none-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-none-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-none-bottom,
+.ta-btn.ta-btn-sm.ta-btn-paddings-none-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-none-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-none-bottom,
+.ta-btn.ta-btn-md.ta-btn-paddings-none-bottom,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-none-bottom,
+.ta-btn.ta-btn-paddings-none-bottom {
+  padding-bottom: 0;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-none-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-none-left,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-none-left,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-none-left,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-none-left,
+.ta-btn.ta-btn-sm.ta-btn-paddings-none-left,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-none-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-none-left,
+.ta-btn.ta-btn-md.ta-btn-paddings-none-left,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-none-left,
+.ta-btn.ta-btn-paddings-none-left {
+  padding-left: 0;
+}
+
+/* XXS - 2px */
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xxs-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxs-top,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xxs-top,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xxs-top,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-xxs-top,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xxs-top,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xxs-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxs-top,
+.ta-btn.ta-btn-md.ta-btn-paddings-xxs-top,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xxs-top,
+.ta-btn.ta-btn-paddings-xxs-top {
+  padding-top: 2px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xxs-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xss-right,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xss-right,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xss-right,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-xss-right,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xss-right,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xss-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xss-right,
+.ta-btn.ta-btn-md.ta-btn-paddings-xss-right,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xss-right,
+.ta-btn.ta-btn-paddings-xxs-right {
+  padding-right: 2px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xxs-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxs-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xxs-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xxs-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-xxs-bottom,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xxs-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xxs-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxs-bottom,
+.ta-btn.ta-btn-md.ta-btn-paddings-xxs-bottom,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xxs-bottom,
+.ta-btn.ta-btn-paddings-xxs-bottom {
+  padding-bottom: 2px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xxs-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xss-left,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xss-left,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xss-left,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-xss-left,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xss-left,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xss-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xss-left,
+.ta-btn.ta-btn-md.ta-btn-paddings-xss-left,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xss-left,
+.ta-btn.ta-btn-paddings-xxs-left {
+  padding-left: 2px;
+}
+
+/* XS - 4px */
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xs-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xs-top,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xs-top,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xs-top,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-xs-top,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xs-top,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xs-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xs-top,
+.ta-btn.ta-btn-md.ta-btn-paddings-xs-top,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xs-top,
+.ta-btn.ta-btn-paddings-xs-top {
+  padding-top: 4px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xs-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xs-right,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xs-right,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xs-right,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-xs-right,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xs-right,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xs-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xs-right,
+.ta-btn.ta-btn-md.ta-btn-paddings-xs-right,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xs-right,
+.ta-btn.ta-btn-paddings-xs-right {
+  padding-right: 4px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xs-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xs-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xs-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xs-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-xs-bottom,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xs-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xs-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xs-bottom,
+.ta-btn.ta-btn-md.ta-btn-paddings-xs-bottom,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xs-bottom,
+.ta-btn.ta-btn-paddings-xs-bottom {
+  padding-bottom: 4px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xs-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xs-left,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xs-left,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xs-left,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-xs-left,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xs-left,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xs-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xs-left,
+.ta-btn.ta-btn-md.ta-btn-paddings-xs-left,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xs-left,
+.ta-btn.ta-btn-paddings-xs-left {
+  padding-left: 4px;
+}
+
+/* S - 6px */
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-s-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-s-top,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-s-top,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-s-top,
+.ta-btn.ta-btn-icon-only.ta-btn-l.top-btn-paddings-s-top,
+.ta-btn.ta-btn-sm.ta-btn-paddings-s-top,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-s-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-s-top,
+.ta-btn.ta-btn-md.ta-btn-paddings-s-top,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-s-top,
+.ta-btn.ta-btn-paddings-s-top {
+  padding-top: 6px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-s-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-s-right,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-s-right,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-s-right,
+.ta-btn.ta-btn-icon-only.ta-btn-l.right-btn-paddings-s-right,
+.ta-btn.ta-btn-sm.ta-btn-paddings-s-right,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-s-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-s-right,
+.ta-btn.ta-btn-md.ta-btn-paddings-s-right,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-s-right,
+.ta-btn.ta-btn-paddings-s-right {
+  padding-right: 6px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-s-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-s-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-s-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-s-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-s-bottom,
+.ta-btn.ta-btn-sm.ta-btn-paddings-s-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-s-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-s-bottom,
+.ta-btn.ta-btn-md.ta-btn-paddings-s-bottom,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-s-bottom,
+.ta-btn.ta-btn-paddings-s-bottom {
+  padding-bottom: 6px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-s-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-s-left,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-s-left,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-s-left,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-s-left,
+.ta-btn.ta-btn-sm.ta-btn-paddings-s-left,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-s-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-s-left,
+.ta-btn.ta-btn-md.ta-btn-paddings-s-left,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-s-left,
+.ta-btn.ta-btn-paddings-s-left {
+  padding-left: 6px;
+}
+
+/* M - 8px */
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-m-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-m-top,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-m-top,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-m-top,
+.ta-btn.ta-btn-icon-only.ta-btn-l.top-btn-paddings-m-top,
+.ta-btn.ta-btn-sm.ta-btn-paddings-m-top,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-m-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-m-top,
+.ta-btn.ta-btn-md.ta-btn-paddings-m-top,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-m-top,
+.ta-btn.ta-btn-paddings-m-top {
+  padding-top: 8px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-m-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-m-right,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-m-right,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-m-right,
+.ta-btn.ta-btn-icon-only.ta-btn-l.right-btn-paddings-m-right,
+.ta-btn.ta-btn-sm.ta-btn-paddings-m-right,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-m-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-m-right,
+.ta-btn.ta-btn-md.ta-btn-paddings-m-right,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-m-right,
+.ta-btn.ta-btn-paddings-m-right {
+  padding-right: 8px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-m-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-m-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-m-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-m-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-m-bottom,
+.ta-btn.ta-btn-sm.ta-btn-paddings-m-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-m-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-m-bottom,
+.ta-btn.ta-btn-md.ta-btn-paddings-m-bottom,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-m-bottom,
+.ta-btn.ta-btn-paddings-m-bottom {
+  padding-bottom: 8px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-m-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-m-left,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-m-left,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-m-left,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-m-left,
+.ta-btn.ta-btn-sm.ta-btn-paddings-m-left,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-m-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-m-left,
+.ta-btn.ta-btn-md.ta-btn-paddings-m-left,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-m-left,
+.ta-btn.ta-btn-paddings-m-left {
+  padding-left: 8px;
+}
+
+/* L - 10px */
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-l-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-l-top,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-l-top,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-l-top,
+.ta-btn.ta-btn-icon-only.ta-btn-l.top-btn-paddings-l-top,
+.ta-btn.ta-btn-sm.ta-btn-paddings-l-top,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-l-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-l-top,
+.ta-btn.ta-btn-md.ta-btn-paddings-l-top,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-l-top,
+.ta-btn.ta-btn-paddings-l-top {
+  padding-top: 10px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-l-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-l-right,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-l-right,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-l-right,
+.ta-btn.ta-btn-icon-only.ta-btn-l.right-btn-paddings-l-right,
+.ta-btn.ta-btn-sm.ta-btn-paddings-l-right,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-l-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-l-right,
+.ta-btn.ta-btn-md.ta-btn-paddings-l-right,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-l-right,
+.ta-btn.ta-btn-paddings-l-right {
+  padding-right: 10px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-l-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-l-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-l-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-l-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-l.bottom-btn-paddings-l-bottom,
+.ta-btn.ta-btn-sm.ta-btn-paddings-l-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-l-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-l-bottom,
+.ta-btn.ta-btn-md.ta-btn-paddings-l-bottom,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-l-bottom,
+.ta-btn.ta-btn-paddings-l-bottom {
+  padding-bottom: 10px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-l-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-l-left,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-l-left,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-l-left,
+.ta-btn.ta-btn-icon-only.ta-btn-l.left-btn-paddings-l-left,
+.ta-btn.ta-btn-sm.ta-btn-paddings-l-left,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-l-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-l-left,
+.ta-btn.ta-btn-md.ta-btn-paddings-l-left,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-l-left,
+.ta-btn.ta-btn-paddings-l-left {
+  padding-left: 10px;
+}
+
+/* XL - 10px */
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xl-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xl-top,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xl-top,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xl-top,
+.ta-btn.ta-btn-icon-only.ta-btn-xl.ta-btn-paddings-xl-top,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xl-top,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xl-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xl-top,
+.ta-btn.ta-btn-md.ta-btn-paddings-xl-top,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xl-top,
+.ta-btn.ta-btn-paddings-xl-top {
+  padding-top: 12px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xl-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xl-right,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xl-right,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xl-right,
+.ta-btn.ta-btn-icon-only.ta-btn-xl.ta-btn-paddings-xl-right,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xl-right,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xl-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xl-right,
+.ta-btn.ta-btn-md.ta-btn-paddings-xl-right,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xl-right,
+.ta-btn.ta-btn-paddings-xl-right {
+  padding-right: 12px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xl-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xl-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xl-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xl-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-xl.ta-btn-paddings-xl-bottom,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xl-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xl-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xl-bottom,
+.ta-btn.ta-btn-md.ta-btn-paddings-xl-bottom,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xl-bottom,
+.ta-btn.ta-btn-paddings-xl-bottom {
+  padding-bottom: 12px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xl-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xl-left,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xl-left,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xl-left,
+.ta-btn.ta-btn-icon-only.ta-btn-xl.ta-btn-paddings-xl-left,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xl-left,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xl-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xl-left,
+.ta-btn.ta-btn-md.ta-btn-paddings-xl-left,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xl-left,
+.ta-btn.ta-btn-paddings-xl-left {
+  padding-left: 12px;
+}
+
+/* XXL - 10px */
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xxl-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxl-top,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xxl-top,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xxl-top,
+.ta-btn.ta-btn-icon-only.ta-btn-xl.ta-btn-paddings-xxl-top,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xxl-top,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xxl-top,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxl-top,
+.ta-btn.ta-btn-md.ta-btn-paddings-xxl-top,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xxl-top,
+.ta-btn.ta-btn-paddings-xxl-top {
+  padding-top: 16px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xxl-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxl-right,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xxl-right,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xxl-right,
+.ta-btn.ta-btn-icon-only.ta-btn-xl.ta-btn-paddings-xxl-right,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xxl-right,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xxl-right,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxl-right,
+.ta-btn.ta-btn-md.ta-btn-paddings-xxl-right,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xxl-right,
+.ta-btn.ta-btn-paddings-xxl-right {
+  padding-right: 16px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xxl-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxl-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xxl-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xxl-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-xl.ta-btn-paddings-xxl-bottom,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xxl-bottom,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xxl-bottom,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxl-bottom,
+.ta-btn.ta-btn-md.ta-btn-paddings-xxl-bottom,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xxl-bottom,
+.ta-btn.ta-btn-paddings-xxl-bottom {
+  padding-bottom: 16px;
+}
+
+.ta-btn.ta-btn-with-icon.ta-btn-xl.ta-btn-paddings-xxl-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxl-left,
+.ta-btn.ta-btn-icon-only.ta-btn-paddings-xxl-left,
+.ta-btn.ta-btn-icon-only.ta-btn-label-only.ta-btn-paddings-xxl-left,
+.ta-btn.ta-btn-icon-only.ta-btn-xl.ta-btn-paddings-xxl-left,
+.ta-btn.ta-btn-sm.ta-btn-paddings-xxl-left,
+.ta-btn.ta-btn-icon-only.ta-btn-md.ta-btn-paddings-xxl-left,
+.ta-btn.ta-btn-label-only.ta-btn-paddings-xxl-left,
+.ta-btn.ta-btn-md.ta-btn-paddings-xxl-left,
+.ta-btn.ta-btn-blank.ta-btn-icon-only.ta-btn-paddings-xxl-left,
+.ta-btn.ta-btn-paddings-xxl-left {
+  padding-left: 16px;
+}
+
+.ta-btn.ta-btn__border-radius-null {
+  border-radius: 0;
+}
+
+.ta-btn.ta-btn__border-radius-xs {
+  border-radius: 2px;
+}
+
+.ta-btn.ta-btn__border-radius-s {
+  border-radius: 4px;
+}
+
+.ta-btn.ta-btn__border-radius-sm {
+  border-radius: 6px;
+}
+
+.ta-btn.ta-btn__border-radius-m {
+  border-radius: 8px;
+}
+
+.ta-btn.ta-btn__border-radius-l {
+  border-radius: 10px;
+}
+
+.ta-btn.ta-btn__border-radius-xl {
+  border-radius: 12px;
+}
+
+.ta-btn.ta-btn__border-radius-xxl {
+  border-radius: 16px;
+}
+
+.ta-btn.ta-btn__border-radius-xxxl {
+  border-radius: 24px;
+}
+
+.ta-btn.ta-btn__border-radius-full {
+  border-radius: 1000px;
+}
