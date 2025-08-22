@@ -1,0 +1,134 @@
+.ta-icon-box {
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ta-icon-box .ta-icon-box__wrapper i {
+  font-size: 14px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__2xs {
+  width: 12px;
+  height: 12px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__2xs i {
+  font-size: 8px;
+  font-weight: 900;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__xs {
+  width: 14px;
+  height: 14px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__xs i {
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__s {
+  width: 16px;
+  height: 16px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__s i {
+  font-size: 10px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__m {
+  width: 16px;
+  height: 16px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__m i {
+  font-size: 12px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__xl {
+  width: 24px;
+  height: 24px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__xl i {
+  font-size: 16px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__2xl {
+  width: 32px;
+  height: 32px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__2xl i {
+  font-size: 24px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__3xl {
+  width: 48px;
+  height: 48px;
+}
+
+.ta-icon-box .ta-icon-box__wrapper.ta-icon-box__wrapper__3xl i {
+  font-size: 32px;
+}
+
+.ta-icon-box.ta-icon-box__vertical {
+  flex-direction: column;
+}
+
+.ta-icon-box.ta-icon-box__align-start {
+  align-items: flex-start;
+}
+
+.ta-icon-box.ta-icon-box__align-end {
+  align-items: flex-end;
+}
+
+.ta-icon-box.ta-icon-box__gap-none {
+  gap: 0;
+}
+
+.ta-icon-box.ta-icon-box__gap-2xs {
+  gap: 0 2px;
+}
+
+.ta-icon-box.ta-icon-box__gap-xs {
+  gap: 0 4px;
+}
+
+.ta-icon-box.ta-icon-box__gap-m {
+  gap: 0 8px;
+}
+
+.ta-icon-box.ta-icon-box__gap-l {
+  gap: 0 12px;
+}
+
+.ta-icon-box.ta-icon-box__gap-xl {
+  gap: 0 16px;
+}
+
+.ta-icon-box.ta-icon-box__gap-2xl {
+  gap: 0 20px;
+}
+
+.ta-icon-box.ta-icon-box__justify-center {
+  justify-content: center;
+}
+
+.ta-icon-box.ta-icon-box__justify-end {
+  justify-content: flex-end;
+}
+
+.ta-icon-box.ta-icon-box__icon-right {
+  flex-direction: row-reverse;
+}
