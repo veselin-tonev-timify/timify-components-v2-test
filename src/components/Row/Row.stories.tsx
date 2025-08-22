@@ -70,7 +70,7 @@ const RowMeta: Meta<typeof Row> = {
   },
 }
 
-export { RowMeta as default }
+export default RowMeta
 
 type RowStory = StoryObj<typeof Row>
 
