@@ -1,0 +1,613 @@
+.ta-input {
+  position: relative;
+}
+
+.ta-input .ta-input__hint-text {
+  margin-top: 4px;
+}
+
+.ta-input.ta-input__is-disabled {
+  cursor: not-allowed;
+}
+
+.ta-input__control-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.ta-input__prefix,
+.ta-input__placeholder {
+  margin-right: 0;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: default;
+  position: relative;
+  background: transparent;
+  border: none;
+  border-right: none;
+  border-radius: 0;
+  height: unset;
+  line-height: 16px;
+  padding-left: 0;
+  margin-right: 4px;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.ta-input__prefix {
+  color: rgba(37, 39, 41, 0.24);
+}
+
+.ta-input__placeholder {
+  color: rgba(37, 39, 41, 0.48);
+}
+
+.ta-input.ta-input__is-focused .ta-input__placeholder,
+.ta-input.ta-input__is-filled .ta-input__placeholder {
+  display: none;
+}
+
+.ta-input.ta-input__has-placeholder .ta-input__control,
+.ta-input.ta-input__has-prefix .ta-input__control {
+  padding-left: 8px;
+}
+
+.ta-input.ta-input__has-placeholder label.ta-input__placeholder,
+.ta-input.ta-input__has-prefix label.ta-input__prefix {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.102px;
+  text-transform: none;
+}
+
+.ta-input.ta-input__has-placeholder label.ta-input__placeholder {
+  color: rgba(37, 39, 41, 0.48);
+}
+
+.ta-input.ta-input__is-disabled.ta-input__has-placeholder label.ta-input__placeholder {
+  color: rgba(37, 39, 41, 0.24);
+}
+
+.ta-input.ta-input__has-prefix label.ta-input__prefix {
+  color: rgba(37, 39, 41, 0.24);
+}
+
+.ta-input.ta-input__is-filled .ta-input__prefix {
+  border-color: var(--color-grey-70-rgba, rgba(80, 90, 94, 0.7));
+}
+
+.ta-input.ta-input__is-focused .ta-input__prefix {
+  border: none;
+  background-color: unset;
+}
+
+.ta-input.ta-input__is-disabled .ta-input__prefix {
+  color: rgba(37, 39, 41, 0.24);
+  background-color: unset;
+  border-color: var(--color-lightgrey-30-rgba, rgba(182, 186, 189, 0.3));
+}
+
+.ta-input:not(.ta-input__is-disabled):not(.ta-input__is-focused):not(.ta-input__has-error) .ta-input__control-wrapper:hover .ta-input__prefix,
+.ta-input:not(.ta-input__is-disabled):not(.ta-input__is-focused).ta-input__is-filled .ta-input__control-wrapper:hover .ta-input__prefix {
+  border-color: unset;
+  background-color: unset;
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused) .ta-input__prefix {
+  color: rgba(37, 39, 41, 0.24);
+}
+
+.ta-input.ta-input__is-focused .ta-input__prefix.ta-input__prefix__is-text,
+.ta-input.ta-input__is-filled .ta-input__prefix.ta-input__prefix__is-text {
+  line-height: 54px;
+  font-size: 10px;
+}
+
+.ta-input__control {
+  display: block;
+  width: 100%;
+  border: 1px solid #b2b5b8;
+  border-radius: 8px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: normal;
+  color: var(--color-grey-60-rgba, rgba(80, 90, 94, 0.6));
+  outline: none;
+  transition: all 0.5s;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.ta-input__control.ta-input__border-radius-null {
+  border-radius: 0;
+}
+
+.ta-input__control.ta-input__border-radius-xs {
+  border-radius: 2px;
+}
+
+.ta-input__control.ta-input__border-radius-s {
+  border-radius: 4px;
+}
+
+.ta-input__control.ta-input__border-radius-sm {
+  border-radius: 6px;
+}
+
+.ta-input__control.ta-input__border-radius-m {
+  border-radius: 8px;
+}
+
+.ta-input__control.ta-input__border-radius-l {
+  border-radius: 10px;
+}
+
+.ta-input__control.ta-input__border-radius-xl {
+  border-radius: 12px;
+}
+
+.ta-input__control.ta-input__border-radius-xxl {
+  border-radius: 16px;
+}
+
+.ta-input__control.ta-input__border-radius-xxxl {
+  border-radius: 24px;
+}
+
+.ta-input__control.ta-input__border-radius-full {
+  border-radius: 1000px;
+}
+
+.ta-input:not(.ta-input__is-disabled).ta-input__control-wrapper:hover .ta-input__control,
+.ta-input:not(.ta-input__is-focused):not(.ta-input__is-disabled) .ta-input__control:hover {
+  color: rgba(37, 39, 41, 0.72);
+  border-color: #666b70;
+  background-color: #f2f3f5;
+  box-shadow:
+    0px 1px 4px -1px rgba(37, 39, 41, 0.16),
+    0px 2px 8px -2px rgba(37, 39, 41, 0.24);
+}
+
+.ta-input.ta-input__is-filled:not(.ta-input__is-disabled):not(.ta-input__has-error) .ta-input__control-wrapper:hover .ta-input__control {
+  border-color: #252729;
+}
+
+.ta-input__control::placeholder {
+  height: 40px;
+  line-height: 40px;
+}
+
+.ta-input__control.ta-input__has-addon {
+  padding-right: 54px;
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused) .ta-input__control {
+  border-color: #FF999F;
+  color: rgba(37, 39, 41, 0.72);
+}
+
+.ta-input.ta-input__is-filled.ta-input__has-error:not(.ta-input__is-focused) .ta-input__control {
+  border-color: #e05a61;
+  color: rgba(37, 39, 41, 0.72);
+}
+
+.ta-input.ta-input__has-error.ta-input__is-disabled .ta-input__control {
+  border-color: #FFCCCF;
+  background-color: #fff;
+  color: rgba(37, 39, 41, 0.72);
+}
+
+.ta-input.ta-input__has-value.ta-input__has-error.ta-input__is-disabled .ta-input__control {
+  border-color: #ffb3b7;
+  background-color: #fff;
+  color: rgba(37, 39, 41, 0.72);
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused):not(.ta-input__is-disabled):hover .ta-input__control {
+  border-color: #cb3b43;
+  color: rgba(37, 39, 41, 0.72);
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused) .ta-input__control::placeholder {
+  color: var(--color-red-70-rgba, rgba(203, 59, 67, 0.7));
+}
+
+.ta-input.ta-input__is-filled .ta-input__control {
+  border-color: #3c3f42;
+  font-size: 12px;
+  color: rgba(37, 39, 41, 0.72);
+  font-weight: normal;
+}
+
+.ta-input.ta-input__is-disabled .ta-input__control {
+  background-color: #f7f9fa;
+  border-color: #e8e9eb;
+  pointer-events: none;
+  color: rgba(37, 39, 41, 0.24);
+}
+
+.ta-input.ta-input__is-filled.ta-input__is-disabled .ta-input__control {
+  border-color: #d4d5d6;
+}
+
+.ta-input.ta-input__is-focused .ta-input__control {
+  color: rgba(37, 39, 41, 0.72);
+  border-color: #0e0e0f;
+  background-color: #f7f9fa;
+  box-shadow:
+    0px 1px 4px -1px rgba(37, 39, 41, 0.32),
+    0px 2px 8px -2px rgba(37, 39, 41, 0.4);
+}
+
+.ta-input:focus .ta-input__control {
+  color: rgba(37, 39, 41, 0.48);
+  border-color: #b2b5b8;
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 4px rgba(37, 39, 41, 0.16);
+}
+
+.ta-input.ta-input__has-error:focus .ta-input__control {
+  color: rgba(37, 39, 41, 0.72);
+  border-color: #e05a61;
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 4px rgba(203, 59, 67, 0.16);
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused):not(.ta-input__is-disabled) .ta-input__control:hover {
+  box-shadow:
+    0px 1px 4px -1px rgba(203, 59, 67, 0.16),
+    0px 2px 8px -2px rgba(203, 59, 67, 0.24);
+  background: #ffe6e7;
+  border-color: #F57A81;
+}
+
+.ta-input.ta-input__is-filled.ta-input__has-error:not(.ta-input__is-focused):not(.ta-input__is-disabled) .ta-input__control:hover {
+  border-color: #cb3b43;
+  box-shadow:
+    0px 1px 4px -1px rgba(203, 59, 67, 0.24),
+    0px 2px 8px -2px rgba(203, 59, 67, 0.32);
+}
+
+.ta-input.ta-input__has-value.ta-input__has-error:not(.ta-input__is-focused):not(.ta-input__is-disabled) .ta-input__control:hover {
+  box-shadow:
+    0px 1px 4px -1px rgba(203, 59, 67, 0.24),
+    0px 2px 8px -2px rgba(203, 59, 67, 0.32);
+  background: #ffe6e7;
+  border-color: #cb3b43;
+}
+
+.ta-input.ta-input__has-error.ta-input__is-focused .ta-input__control {
+  box-shadow:
+    0px 1px 4px -1px rgba(203, 59, 67, 0.32),
+    0px 2px 8px -2px rgba(203, 59, 67, 0.4);
+  background: #fff2f3;
+  border-color: #bf3038;
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused):hover label:not(.ta-input__placeholder):not(.ta-input__prefix) {
+  color: rgba(203, 59, 67, 0.48);
+}
+
+.ta-input.ta-input__has-error.ta-input__is-focused label:not(.ta-input__placeholder):not(.ta-input__prefix) {
+  color: rgba(203, 59, 67, 0.64);
+}
+
+.ta-input.ta-input__is-focused .ta-input__control,
+.ta-input.ta-input__is-filled .ta-input__control,
+.ta-input.ta-input__has-placeholder .ta-input__control,
+.ta-input.ta-input__has-prefix .ta-input__control {
+  padding-top: 14px;
+}
+
+.ta-input.ta-input__is-on-mobile .ta-input__control {
+  height: 40px;
+  line-height: 40px;
+}
+
+.ta-input__addon {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(37, 39, 41, 0.40);
+}
+
+.ta-input__addon .ta-hover-popup__trigger {
+  margin-top: 5px;
+}
+
+.ta-input__addon.ta-input__addon__is-text {
+  font-size: 10px;
+  font-weight: bold;
+  top: 12px;
+  right: 8px;
+  transition: top 0.2s;
+}
+
+.ta-input__addon>i:first-child {
+  margin-top: 4px;
+}
+
+.ta-input.ta-input__is-focused .ta-input__addon,
+.ta-input.ta-input__is-filled .ta-input__addon {
+  opacity: 1;
+  color: rgba(37, 39, 41, 0.40);
+}
+
+.ta-input.ta-input__is-focused .ta-input__addon.ta-input__addon__is-text,
+.ta-input.ta-input__is-filled .ta-input__addon.ta-input__addon__is-text {
+  top: 20px;
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused) .ta-input__addon {
+  color: var(--color-red-100, #cb3b43);
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused):not(.ta-input__is-filled) .ta-input__addon {
+  color: var(--color-red-70-rgba, rgba(203, 59, 67, 0.7));
+}
+
+.ta-input.ta-input__is-disabled .ta-input__addon {
+  color: var(--color-grey-30-rgba, rgba(80, 90, 94, 0.3));
+}
+
+.ta-input.ta-input__is-on-mobile .ta-input__addon {
+  font-size: 14px;
+}
+
+.ta-input__limit {
+  position: relative;
+  bottom: 7px;
+  right: 7px;
+  color: var(--color-grey-100, #505a5e);
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.5;
+  float: left;
+}
+
+.ta-input__right-margin {
+  margin-right: 45px;
+}
+
+.ta-input__number-controls {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 99;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.ta-input__btn {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  text-align: center;
+  background: var(--color-light-grey-100, #b6babd);
+  color: var(--color-grey-100, #505a5e);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ta-input__btn-disabled {
+  opacity: 50%;
+}
+
+.ta-input__clear-btn {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  z-index: 99;
+}
+
+.ta-input.ta-input__is-disabled .ta-input__btn {
+  opacity: 50%;
+}
+
+.ta-input.ta-input__is-on-mobile .ta-input__btn {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  top: 4px;
+  right: 4px;
+}
+
+.ta-input label {
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(37, 39, 41, 0.48);
+  z-index: 5;
+  transition: all 0.2s;
+  max-width: calc(100% - 20px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+}
+
+.ta-input label.ta-input__label {
+  display: flex;
+  overflow: hidden;
+}
+
+.ta-input label.ta-input__label span.ta-input__label__text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ta-input.ta-input__is-filled label:not(.ta-input__prefix) {
+  visibility: visible;
+  opacity: 1;
+  color: rgba(37, 39, 41, 0.48);
+  top: 4px;
+  left: 9px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.ta-input.ta-input__is-filled.ta-input__is-disabled label:not(.ta-input__prefix) {
+  color: rgba(37, 39, 41, 0.24);
+}
+
+.ta-input.ta-input__is-focused label:not(.ta-input__prefix) {
+  visibility: visible;
+  opacity: 1;
+  color: rgba(37, 39, 41, 0.64);
+  top: 4px;
+  left: 9px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.ta-input.ta-input__is-focused.ta-input__has-prefix label:not(.ta-input__prefix),
+.ta-input.ta-input__has-prefix label:not(.ta-input__prefix) {
+  top: 4px;
+  left: 9px;
+  line-height: 16px;
+}
+
+.ta-input.ta-input__is-focused.ta-input__has-placeholder label:not(.ta-input__placeholder),
+.ta-input.ta-input__has-placeholder label:not(.ta-input__placeholder) {
+  top: 4px;
+  left: 9px;
+  line-height: 16px;
+}
+
+.ta-input.ta-input__has-placeholder label.ta-input__placeholder,
+.ta-input.ta-input__has-placeholder.ta-input__is-focused label.ta-input__placeholder,
+.ta-input.ta-input__has-prefix label.ta-input__prefix,
+.ta-input.ta-input__has-prefix.ta-input__is-focused label.ta-input__prefix {
+  top: 19px;
+  left: 9px;
+}
+
+.ta-input.ta-input__has-prefix.ta-input__is-focused label.ta-input__prefix {
+  color: rgba(37, 39, 41, 0.24);
+}
+
+.ta-input.ta-input__is-on-mobile.ta-input__is-filled label,
+.ta-input.ta-input__is-on-mobile.ta-input__is-focused label {
+  font-size: 12px;
+  line-height: 10px;
+  top: -1px;
+}
+
+.ta-input.ta-input__is-disabled label.ta-input__label {
+  color: rgba(37, 39, 41, 0.24);
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused):not(.ta-input__is-disabled) label:not(.ta-input__placeholder):not(.ta-input__prefix) {
+  color: rgba(203, 59, 67, 0.48);
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused):not(.ta-input__is-filled) label:not(.ta-input__placeholder):not(.ta-input__prefix) {
+  color: rgba(203, 59, 67, 0.48);
+}
+
+.ta-input.ta-input__has-error.ta-input__is-disabled:not(.ta-input__is-focused) label:not(.ta-input__placeholder):not(.ta-input__prefix) {
+  color: rgba(203, 59, 67, 0.32);
+}
+
+.ta-input.ta-input__has-error.ta-input__is-disabled.ta-input__is-filled label:not(.ta-input__placeholder):not(.ta-input__prefix),
+.ta-input.ta-input__has-error.ta-input__is-disabled:not(.ta-input__is-focused):not(.ta-input__is-filled) label:not(.ta-input__placeholder):not(.ta-input__prefix) {
+  color: rgba(203, 59, 67, 0.32);
+}
+
+.ta-input.ta-input__has-error.ta-input__is-disabled.ta-input__is-filled .ta-input__control {
+  color: rgba(37, 39, 41, 0.24);
+  border-color: #FFB3B7;
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused):not(.ta-input__is-filled) .ta-input__prefix {
+  color: rgba(37, 39, 41, 0.24);
+}
+
+.ta-input.ta-input__has-error:not(.ta-input__is-focused):not(.ta-input__is-filled) label.ta-input__placeholder {
+  color: rgba(37, 39, 41, 0.48);
+}
+
+.ta-input.ta-input__has-error.ta-input__is-disabled:not(.ta-input__is-focused):not(.ta-input__is-filled) label.ta-input__placeholder {
+  color: rgba(37, 39, 41, 0.24);
+}
+
+.ta-input__control-inner-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.ta-input__password-toggle-btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--color-grey-100, #505a5e);
+}
+
+.ta-input__control .ta-input__reset-radius {
+  border-radius: 0;
+}
+
+.ta-input__control.ta-input__reset-bottom-radius {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.ta-input__control.ta-input__reset-top-radius {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.ta-input__control.ta-input__reset-right-top-radius {
+  border-top-right-radius: 0;
+}
+
+.ta-input__control.ta-input__reset-left-top-radius {
+  border-top-left-radius: 0;
+}
+
+.ta-input__control.ta-input__reset-left-bottom-radius {
+  border-bottom-left-radius: 0;
+}
+
+.ta-input__control.ta-input__reset-right-bottom-radius {
+  border-bottom-right-radius: 0;
+}
+
+.ta-input__is-filled .ta-input__type-password {
+  padding-right: 36px;
+}
+
+.ta-input__is-focused.ta-input__is-filled .ta-input__type-password {
+  padding-right: 36px;
+}
+
+.ta-input.ta-input__has-clear-btn .ta-input__control {
+  padding-right: 36px;
+}
+
+.ta-input.ta-input__has-clear-btn .ta-input__label {
+  max-width: calc(100% - 45px);
+}

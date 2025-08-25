@@ -1,0 +1,311 @@
+/* text default styles */
+.ta-text {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.102px;
+  font-weight: 300;
+  color: rgba(37, 39, 41, 0.56);
+  display: flex;
+  align-items: center;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.ta-text.ta-text__align-items-start {
+  align-items: start;
+}
+
+.ta-text.ta-text__align-items-end {
+  align-items: end;
+}
+
+.ta-text.ta-text__align-items-flex-start {
+  align-items: flex-start;
+}
+
+.ta-text.ta-text__align-items-flex-end {
+  align-items: flex-end;
+}
+
+.ta-text.ta-text__bold-medium {
+  font-weight: 500;
+}
+
+.ta-text.ta-text__bold-bold {
+  font-weight: 700;
+}
+
+.ta-text i {
+  color: rgba(37, 39, 41, 0.8);
+  margin-right: 4px;
+}
+
+.ta-text.ta-text__secondary,
+.ta-text.ta-text__secondary i {
+  color: rgba(37, 39, 41, 0.48);
+}
+
+.ta-text.ta-text__inherit {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+.ta-text .ta-text__prefix {
+  margin-right: 4px;
+  text-transform: capitalize;
+  color: rgba(37, 39, 41, 0.282);
+  word-break: keep-all;
+}
+
+.ta-text.ta-text__size-xxl {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.108px;
+}
+
+.ta-text.ta-text__size-xl {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.104px;
+}
+
+.ta-text.ta-text__size-l {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.105px;
+}
+
+.ta-text.ta-text__size-s {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.ta-text.ta-text__size-xs {
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.ta-text.ta-text__size-xxs {
+  font-size: 8px;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+}
+
+.ta-text.ta-text-bottom-offset-none {
+  padding-bottom: 0;
+}
+
+.ta-text.ta-text-bottom-offset-xxs {
+  padding-bottom: 2px;
+}
+
+.ta-text.ta-text-bottom-offset-xs {
+  padding-bottom: 4px;
+}
+
+.ta-text.ta-text-bottom-offset-m {
+  padding-bottom: 12px;
+}
+
+.ta-text.ta-text-bottom-offset-l {
+  padding-bottom: 16px;
+}
+
+.ta-text.ta-text-top-offset-none {
+  padding-top: 0;
+}
+
+.ta-text.ta-text-top-offset-xxs {
+  padding-top: 2px;
+}
+
+.ta-text.ta-text-top-offset-xs {
+  padding-top: 4px;
+}
+
+.ta-text.ta-text-top-offset-m {
+  padding-top: 12px;
+}
+
+.ta-text.ta-text-top-offset-l {
+  padding-top: 16px;
+}
+
+.ta-text.ta-text-offset-xxs {
+  padding-block: 2px;
+}
+
+.ta-text.ta-text-offset-xs {
+  padding-block: 4px;
+}
+
+.ta-text.ta-text-offset-m {
+  padding-block: 12px;
+}
+
+.ta-text.ta-text-offset-l {
+  padding-block: 16px;
+}
+
+.ta-text.ta-text-offset-none {
+  padding-block: 0;
+}
+
+.ta-text.ta-text__uppercase {
+  text-transform: uppercase;
+}
+
+.ta-text.ta-text__truncate {
+  display: block;
+  align-self: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ta-text.ta-text__centered {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* text italic style */
+.ta-text.ta-text__italic {
+  font-style: italic;    
+}
+
+/* text weight styles */
+.ta-text.ta-text__weight-extralight {
+  font-weight: 200;
+}
+
+.ta-text.ta-text__weight-light {
+  font-weight: 300;
+}
+
+.ta-text.ta-text__weight-regular {
+  font-weight: 400;
+}
+
+.ta-text.ta-text__weight-medium {
+  font-weight: 500;
+}
+
+.ta-text.ta-text__weight-semibold {
+  font-weight: 600;
+}
+
+.ta-text.ta-text__weight-bold {
+  font-weight: 700;
+}
+
+/* text style with opacity */
+.ta-text__fade {
+  opacity: 50%;
+}
+/* bullet styles */
+.ta-text__bullet {
+  line-height: 1;
+  word-break: break-word;
+}
+
+.ta-text__bullet:before {
+  content: "\f111";
+  font-family: "Font Awesome 6 Pro";
+  color: var(--color-light-grey-100,#b6babd);
+  margin-right: 6px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6px;
+  align-self: center;
+}
+/* links inside text default style */
+.ta-text a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: var(--color-grey-100,#505a5e);
+  font-style: normal;
+}
+/* red link style */
+.ta-text.ta-text__link-red a {
+  color: var(--color-red-100,#CB3B43);
+}
+/* blue link style */
+.ta-text.ta-text__link-blue a {
+  color: var(--color-blue-100,#385F87);
+}
+/* link hover style */
+.ta-text  a:hover {
+  text-decoration: none;
+  color: #385f87;
+}
+
+.ta-text a {
+  color: #385f878f;
+}
+
+/* bold link style    */
+.ta-text.ta-text__link-bold a {
+  font-weight: bold;
+}
+
+.ta-text.ta-text__line-height-xxs {
+  line-height: 1;
+}
+
+.ta-text.ta-text__line-height-xs {
+  line-height: 1.2;
+}
+
+.ta-text.ta-text__line-height-s {
+  line-height: 1.4;
+}
+
+.ta-text.ta-text__line-height-m {
+  line-height: 1.5;
+}
+
+.ta-text.ta-text__line-height-l {
+  line-height: 1.6;
+}
+
+.ta-text.ta-text__line-height-xl {
+  line-height: 1.8;
+}
+
+.ta-text.ta-text__line-height-xxl {
+  line-height: 2; 
+}
+
+.ta-text.ta-text__letter-spacing-xxs {
+  letter-spacing: -0.05em; 
+}
+
+.ta-text.ta-text__letter-spacing-xs {
+  letter-spacing: -0.025em; 
+}
+
+.ta-text.ta-text__letter-spacing-s {
+  letter-spacing: -0.01em; 
+}
+
+.ta-text.ta-text__letter-spacing-m {
+  letter-spacing: 0; 
+} 
+
+.ta-text.ta-text__letter-spacing-l {
+  letter-spacing: 0.01em; 
+}
+
+.ta-text.ta-text__letter-spacing-xl {
+  letter-spacing: 0.025em; 
+} 
+
+.ta-text.ta-text__letter-spacing-xxl {
+  letter-spacing: 0.05em; 
+}

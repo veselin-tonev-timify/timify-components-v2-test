@@ -1,4 +1,3 @@
-// FontAwesome5.tsx
 import React, { CSSProperties } from 'react'
 
 export type FontAwesome5Type =
