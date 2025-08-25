@@ -157,12 +157,12 @@ const Input = forwardRef<HTMLDivElement, InputProps>(
     const placeholderClassNames = ['ta-input__placeholder']
     const prefixClassNames = ['ta-input__prefix']
 
-    const increaseButtonClassNames = ['ta-input__btn']
+    const increaseButtonClassNames = ['ta-input__btn ta-input__btn-increase']
     if (isDisabled || (maxValue !== undefined && Number(value) === maxValue)) {
       increaseButtonClassNames.push('ta-input__btn-disabled')
     }
 
-    const decreaseButtonClassNames = ['ta-input__btn']
+    const decreaseButtonClassNames = ['ta-input__btn ta-input__btn-decrease']
     if (isDisabled || (minValue !== undefined && Number(value) === minValue)) {
       decreaseButtonClassNames.push('ta-input__btn-disabled')
     }
@@ -362,12 +362,14 @@ const Input = forwardRef<HTMLDivElement, InputProps>(
             <div
               className={decreaseButtonClassNames.join(' ')}
               onClick={handleOnDecrease}
+              role="button"
             >
               <FontAwesome5 icon="minus" type="solid" />
             </div>
             <div
               className={increaseButtonClassNames.join(' ')}
               onClick={handleOnIncrease}
+              role="button"
             >
               <FontAwesome5 icon="plus" type="solid" />
             </div>
